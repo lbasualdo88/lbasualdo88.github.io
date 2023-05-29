@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Prompt:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="Imagenes/Vector.png" alt="Logo Alura">
+            <button class="modoOscuro"></button>
+            <div class="auxiliar"></div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <article class="articulo1">
+                <input class="ingresoMensaje" type="text" placeholder="Ingrese mensaje">
+                <h6>Solo minusculas y sin acentos</h6>
+                <div class="btn_grupo">
+                    <button class="btn_encriptador boton">Encriptador</button>
+                    <button class="btn_desencriptador boton">Desencriptador</button>
+                </div>
+            </article>
+            <article class="articulo2">              
+                    <input class="mensajeEncriptado" type="text" >
+                    <button class="btn_copiar boton">Copiar</button>               
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p class="footer_p contenedor">&copy Leonardo Basualdo - Desafio Oracle ONE G5</p>     
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>

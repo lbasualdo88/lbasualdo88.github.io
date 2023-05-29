@@ -1,0 +1,196 @@
+:root{
+    --Color1: #ffffff;
+    --Color2: #0b0131;
+    --Color3: #ffc107;
+    --color4: #0097A7;
+    --color5: #757575;
+    --color6: #DFE9F3;
+    --color7: #c3def8;
+}
+html{
+    font-size: 62.5%; /*ayuda a que la medida rem se adapte a distintas pantallas */
+    box-sizing: border-box; /* Hack para box model *//*ayuda a que no se generen conflicto de medidas con el pading*/
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {box-sizing: inherit; } /*ayuda a que no se generen conflicto de medidas con el pading*/
+body {
+    font-size: 16px;
+    background: var(--color6);
+    /*background: black;*/ /*---esta linea se activa con JS---*/
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+/*HEADER*/
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.auxiliar {
+    margin-top: 5.2rem;
+    margin-right: 5rem;
+    height: 2.8rem;
+    width: 6rem;
+    border-radius: 30%;
+    background: var(--color7); 
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    z-index: -1;
+    
+}
+.modoOscuro {
+    border: none;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    height: 3.1rem;
+    width: 3.2rem;
+    border-radius: 40%;
+    background: var(--color4);
+    
+}
+
+.modoOscuro:hover {
+    cursor: pointer;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.logo {
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+@media (min-width: 768px) {
+    .contenedor {
+        max-width: 120rem; /*toma como maximo 1200px=120rem, si es menos se adacta solo*/
+        margin: 10rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 5rem;
+    }
+}
+
+/*ARTICULO UNO*/
+
+.articulo1 {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  
+}
+h6 {
+    text-align: center;
+    color: var(--color5);
+}
+@media (min-width: 768px) {
+    .btn_grupo {
+        display: flex;
+        margin: auto 2rem auto 5rem;
+    }
+    h6 {
+        margin-left: 2rem;
+        text-align: left;
+    }
+}
+.btn_grupo {
+    
+    text-align: center;
+    margin: auto;
+}
+.boton:hover{
+    cursor: pointer;
+    background: var(--Color3);
+}
+
+
+.ingresoMensaje {
+    height: 77%;
+    width: 100%;
+    background: var(--color6);
+    border: none;
+    color: var(--color4);
+    padding: 2rem;
+    margin-top: 6rem;
+}
+.ingresoMensaje:focus {
+    outline: none;
+}
+
+.btn_encriptador {
+    
+    background-color: var(--color4);
+    color: var(--Color1);
+    border: none;
+    border-radius: 0.8rem;
+    height: 50px;
+    width: 300px;
+    margin: 5px;
+}
+.btn_desencriptador {
+    background-color: var(--color4);
+    color: var(--Color1);
+    border: none;
+    border-radius: 0.8rem;
+    height: 50px;
+    width: 300px;
+    margin: 5px;
+}
+
+
+/*ARTICULO DOS */
+@media (min-width: 768px) {
+    .articulo2 {
+        display: block;
+    }
+}
+.articulo2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    
+}
+.mensajeEncriptado {
+    text-align: center;
+    background-color: var(--Color1);
+    background-image: url("Imagenes/candado-Oscuro.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    padding: 2rem;
+    border-radius: 24px;
+    color: var(--color4);
+    height: 300px;
+    width: 300px;
+    margin: 3rem 0 0 0;
+}
+.mensajeEncriptado:focus {
+    outline: none;
+}
+.btn_copiar {
+    background-color: var(--color4);
+    color: var(--Color1);
+    border: none;
+    border-radius: 0.8rem;
+    height: 50px;
+    width: 300px;
+    margin: 1rem 0 1rem 0;
+}
+
+::placeholder {
+    color: var(--Color1);
+    text-align: center;
+}  
+@media (min-width: 768px) {
+    ::placeholder {
+        text-align: left;
+    }
+}
+.footer_p {  
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--color4);
+}
+@media (min-width: 768px) {
+    .footer_p {      
+        margin: 10rem auto 5rem auto;
+    }
+}
