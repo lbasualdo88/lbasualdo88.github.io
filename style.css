@@ -20,12 +20,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Prompt', sans-serif;
     font-family: 'PT Sans', sans-serif;
-    
+    height: 100%;
 }
 /*HEADER*/
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 .auxiliar {
     margin-top: 5.2rem;
@@ -53,7 +54,7 @@ body {
 
 .modoOscuro:hover {
     cursor: pointer;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: var(--Color3);
 }
 .logo {
     margin-top: 5rem;
@@ -62,7 +63,7 @@ body {
 @media (min-width: 768px) {
     .contenedor {
         max-width: 120rem; /*toma como maximo 1200px=120rem, si es menos se adacta solo*/
-        margin: 10rem auto 0 auto;
+        margin: 2rem auto 2rem auto;
         display: grid;
         grid-template-columns: 60% 40%;
         gap: 5rem;
@@ -185,12 +186,13 @@ h6 {
     }
 }
 .footer_p {  
+    position: relative;
     text-align: center;
-    margin-top: 3rem;
+   
     color: var(--color4);
 }
 @media (min-width: 768px) {
     .footer_p {      
-        margin: 10rem auto 5rem auto;
+        margin: 15rem auto 5rem auto;
     }
 }
