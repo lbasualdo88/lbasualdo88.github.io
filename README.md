@@ -11,7 +11,7 @@ Leonardo Javier Basualdo<br/>
 Para Alura Latam como Trabajo Práctico<br/>
 <br/>
 <strong>Curso de donde se aprendió:</strong><br/>
-Desarrollo Web Completo<br/>
+Desarrollador Front End<br/>
 <br/>
 <strong>Categoría del Proyecto:</strong><br/>
 Frontend<br/>
